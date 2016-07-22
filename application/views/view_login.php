@@ -22,7 +22,7 @@
 	<div class="form-box">
 		<div class="head">Encuestas</div>
 		<!--form action="#" id="login-form"-->
-		<form action="http://localhost/nueva/encuestas/index.php/verifylogin" id="login-form" method="POST">
+		<form action="http://localhost/encuestas/index.php/verifylogin" id="login-form" method="POST">
 		<?php //echo form_open('verifylogin'); ?>
 			<div class="form-group">
 				<!--label class="label-control">

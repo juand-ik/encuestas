@@ -19,13 +19,13 @@ class Home extends CI_Controller
 		}
 		else
 		{
-			redirect('http://localhost/nueva/encuestas/', 'refresh');
+			redirect('http://localhost/encuestas/', 'refresh');
 		}
 	}
 	function logout()
 	{
 		$this->session->unset_userdata('logged_in');
 		session_destroy();
-		redirect('http://localhost/nueva/encuestas/', 'refresh');
+		redirect('http://localhost/encuestas/', 'refresh');
 	}
 }

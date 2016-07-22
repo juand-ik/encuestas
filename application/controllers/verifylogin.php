@@ -31,11 +31,11 @@ class VerifyLogin extends CI_Controller
 				);
 				$this->session->set_userdata('logged_in', $sess_array);
 			}
-			redirect('http://localhost/nueva/encuestas/index.php/home','refresh');
+			redirect('http://localhost/encuestas/index.php/home','refresh');
 		}
 		else
 		{
-			redirect('http://localhost/nueva/encuestas/','refresh');
+			redirect('http://localhost/encuestas/','refresh');
 			$this->form_validation->set_message('check_database', 'Invalid username or password');
 			return false;
 		}

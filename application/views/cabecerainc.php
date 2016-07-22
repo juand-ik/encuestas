@@ -25,20 +25,22 @@ function Obtfec()
 		<title>Horizonte</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
-		<script src="http://localhost/nueva/encuestas/assets/js/jquery.min.js"></script>
+		<script src="http://localhost/encuestas/assets/js/jquery.min.js"></script>
+		<script src="http://localhost/encuestas/assets/js/jquery.dataTables.js"></script>
 	    <!--script type="text/javascript" charset="utf-8" language="JavaScript" charset="ISO-8859-1" src="../js/jquery.dataTables.js"></script-->
 		<!--script type="text/javascript" charset="utf-8" language="JavaScript" charset="ISO-8859-1" src='../js/funcion.js'></script-->
-		<script type="text/javascript" charset="utf-8" language="JavaScript" charset="ISO-8859-1" src="../js/validaform.js"></script>
+		<!--script type="text/javascript" charset="utf-8" language="JavaScript" charset="ISO-8859-1" src="../js/validaform.js"></script-->
 		<!--link rel="stylesheet" href="../css/datatables.css"-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="http://localhost/nueva/encuestas/assets/css/styles-home.css">
-		<link rel="stylesheet" href="http://localhost/nueva/encuestas/assets/css/material.min.css" />
-		<script src="http://localhost/nueva/encuestas/assets/js/material.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://localhost/encuestas/assets/css/styles-home.css">
+		<link rel="stylesheet" href="http://localhost/encuestas/assets/css/material.min.css" />
+		<link rel="stylesheet" href="http://localhost/encuestas/assets/css/datatables.css" />
+		<script src="http://localhost/encuestas/assets/js/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<!--link rel="stylesheet" type="text/css" href="../css/menu.css">
-    	<link rel="icon" type="image/ico" href="../img/favico.png"-->
+		<!--link rel="stylesheet" type="text/css" href="../css/menu.css"-->
+    	<link rel="icon" type="image/ico" href="http://localhost/encuestas/assets/img/favico.png">
 		<style type="text/css">
-			* header,footer  { background-color: <?php echo $username; ?> ; }
+			* header,footer  { /*background-color: <?php //echo $username; ?> ;*/ }
 		</style>
 		<script>
 		/*var brw = new Browser();
@@ -60,7 +62,7 @@ function Obtfec()
 				<!-- Contenido de la pagina -->
 				<header>
 					<div class="logo">
-						<a onClick="location.href='http://localhost/nueva/encuestas/index.php/home'"><img src="http://localhost/nueva/encuestas/assets/img/logoEH.jpeg" alt="hz"/></a>
+						<a onClick="location.href='http://localhost/encuestas/index.php/home'"><img src="http://localhost/nueva/encuestas/assets/img/logoEH.jpeg" alt="hz"/></a>
 					</div>
 					<div class="titular">
 						<h1 class="titulo">EH: El Horizonte</h1>
@@ -79,15 +81,15 @@ function Obtfec()
 							<li class="mdl-menu__item">Perfil</li>
 							<!--li class="mdl-menu__item">Another Action</li>
 							<li disabled class="mdl-menu__item">Disabled Action</li-->
-							<li class="mdl-menu__item">Cerrar Sesión</li>
+							<li class="mdl-menu__item"><a href="http://localhost/encuestas/index.php/home/logout">Cerrar Sesión</a></li>
 						</ul>
 					</div>
 				</header>
 				<nav>
 					<ul class="menu">
-						<li><a href="http://localhost/nueva/encuestas/index.php/home">Inicio</a></li>
+						<li><a href="http://localhost/encuestas/index.php/home">Inicio</a></li>
 						<li><a href="#">Preferencias</a></li>
-						<li><a href="http://localhost/nueva/encuestas/index.php/usuarios">Usuarios</a></li>
+						<li><a href="http://localhost/encuestas/index.php/usuarios">Usuarios</a></li>
 						<li><a href="#">Ticktes</a></li>
 						<li><a href="#">Estadisticas</a></li>
 					</ul>

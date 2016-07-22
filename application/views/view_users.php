@@ -7,19 +7,54 @@
 	box-shadow: 0px 3px 30px #333;
 }
 </style>
-	<div class="main-container">
-		<div class="details">
-			<h2>Usuarios</h2>
-			<div class="result">
+<style>
+.card-layout {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-container
+{
+	background-color: #626cbf; /*cornflowerblue;*/
+	height: 15em;
+	padding-top: 40px;
+}
+form {
+    padding: 1em;
+	/*padding-top: 40px;*/
+	padding-top: 1px;
+	padding-bottom: 6em;
+	height: auto;/*40em;*/
+	box-shadow: 0px 6px 20px #333;
+}
+h1{
+    font-size: 35px;
+}
+</style>
+<?php include_once "cabecerainc.php"; ?>
+<style>
+.result {
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+	box-shadow: 0px 3px 30px #333;
+}
+</style>
+
+<div class="main-container">
+	<div class="card-layout">
+		<a href="home/logout">Logout</a>
+		<h1>Suscriptores</h1>
+		<div class="result">
 				<table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nombre</th>
-                <th>Posicion</th>
-                <th>Oficina</th>
-                <th>Edad</th>
-                <th>Fecha de Entrada</th>
-                <th>Salario</th>
+                <th>Domicilio</th>
+                <th>Tipo</th>
+                <th>Fecha de Registro</th>
+                <th>Fecha de actualización</th>
             </tr>
         </thead>
         <tbody>
@@ -89,14 +124,12 @@
             </tr>
         </tbody>
 		</table>
-			</div>
-		</div>
 	</div>
-<a href="home/logout">Logout</a>
-<!--script src="http://localhost/nueva/encuestas/assets/js/jquery.dataTables.js"></script-->
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	</div>
+</div>
 <script>
 $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
+<a href="http://localhost/encuestas/index.php/usuarios/nuevo">Nuevo</a>
